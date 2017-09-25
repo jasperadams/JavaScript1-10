@@ -48,7 +48,6 @@ function string_bits(str){
 
 //caughtSpeeding
 function caughtSpeeding(speed, birthday){
-    var val = 0;
     var x = 0;
     if(birthday == true){
         x = 5;
@@ -122,7 +121,7 @@ function blackjack(x, y){
 //loneSum
 function loneSum(a, b, c){
     var sum = a + b + c;
-    var result = sum
+    var result = sum;
     if(a == b || a == c){
         result = sum - 2 * a;
     }
@@ -137,12 +136,11 @@ function loneSum(a, b, c){
 
 
 function tester() {
-    document.getElementById("output").innerHTML = sleepIn(true, false);
-    document.getElementById("output").innerHTML = nextOne(true, false);
-    document.getElementById("output").innerHTML = monkey_trouble(true, true)
-    document.getElementById("output").innerHTML = string_times(hello, 5);
-    document.getElementById("output").innerHTML = front_times(hello 2);
-    document.getElementById("output").innerHTML = string_bits(hello);
+    document.getElementById("output").innerHTML = sleep_in(true, false);
+    document.getElementById("output").innerHTML = monkey_trouble(true, true);
+    document.getElementById("output").innerHTML = string_times("hello", 5);
+    document.getElementById("output").innerHTML = front_times("hello", 2);
+    document.getElementById("output").innerHTML = string_bits("hello");
     document.getElementById("output").innerHTML = caughtSpeeding(50, true);
     document.getElementById("output").innerHTML = fizz_buzz(25);
     document.getElementById("output").innerHTML = teaParty(3, 10);
